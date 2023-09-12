@@ -1,6 +1,5 @@
-| | | | |
+|**Variable**|**Inhalt**|**Format**|**Bemerkungen**|
 |-|-|-|-|
-|Variable|Inhalt|Format|Bemerkungen|
 |wahltag|Datum des Urnengangs|date "yyyy-mm-dd"| |
 |timestamp|Zeitpunkt der letzten Aktualisierung|datetime "yyyy-mm-ddThh:mm:ss"|Werte, welche direkt aus der Übermittlungssoftware gespiesen werden, beinhalten kein Datum und werden im Format "hh:mm" ausgewiesen.|
 |kantone|Liste der Kantone|list| |
