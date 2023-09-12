@@ -14,10 +14,10 @@
 |langKey|Sprachcode für den Vorlagentitel <br />de: deutsch <br />fr: französisch <br />it: italienisch <br />rm: rätoromanisch|character| |
 |text|Titel der Vorlage|character| |
 |vorlageBeendet|Angabe, ob die Auszählung und Eingabe des gesamten Geschäfts (in allen daran beteiligten Verwaltungseinheiten) abgeschlossen ist|logical| |
-|geschaeftsTypId|ID des Geschäftstyps|numeric|Siehe Tabellenblatt "Geschäftstypen"|
-|geschaeftsTyp|Typ des Geschäfts|character|Siehe Tabellenblatt "Geschäftstypen"|
-|geschaeftsSubTypId|ID des Geschäftssubtyps|numeric|Siehe Tabellenblatt "Geschäftstypen"|
-|geschaeftsSubTyp|Subtyp des Geschäfts|character|Siehe Tabellenblatt "Geschäftstypen"|
+|geschaeftsTypId|ID des Geschäftstyps|numeric|Siehe Datei [geschaeftstypen_geschaeftsarten.md](https://github.com/openZH/documentation_echtzeitdaten-am-wahltag/blob/main/geschaeftstypen_geschaeftsarten.md)|
+|geschaeftsTyp|Typ des Geschäfts|character|Siehe Datei [geschaeftstypen_geschaeftsarten.md](https://github.com/openZH/documentation_echtzeitdaten-am-wahltag/blob/main/geschaeftstypen_geschaeftsarten.md)|
+|geschaeftsSubTypId|ID des Geschäftssubtyps|numeric|Siehe Datei [geschaeftstypen_geschaeftsarten.md](https://github.com/openZH/documentation_echtzeitdaten-am-wahltag/blob/main/geschaeftstypen_geschaeftsarten.md)|
+|geschaeftsSubTyp|Subtyp des Geschäfts|character|Siehe Datei [geschaeftstypen_geschaeftsarten.md](https://github.com/openZH/documentation_echtzeitdaten-am-wahltag/blob/main/geschaeftstypen_geschaeftsarten.md)|
 |hauptvorlagenId|Indikator für die ID der Hauptvorlage, falls das Geschäft keine Hauptvorlage ist (geschaeftsSubTypId ≠ 1)|numeric| |
 |annahmekriteriumTypId|Code für das Annahmekriterium des Geschäfts <br />1: Mehrheit der Stimmen <br />2: Mehrheit der Gemeinden <br />3: Alle Gemeinden <br />4: Mehrheit der Stimmen und der Gemeinden <br />5: Volks- und Ständemehr|numeric| |
 |annahmekriteriumTyp|Annahmekriterium des Geschäfts <br />Mehrheit der Stimmen <br />Mehrheit der Gemeinden <br />Alle Gemeinden <br />Mehrheit der Stimmen und der Gemeinden <br />Volks- und Ständemehr|character| |
