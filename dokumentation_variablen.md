@@ -20,7 +20,7 @@
 |geschaeftsSubTyp|Subtyp des Geschäfts|character|Siehe Tabellenblatt "Geschäftstypen"|
 |hauptvorlagenId|Indikator für die ID der Hauptvorlage, falls das Geschäft keine Hauptvorlage ist (geschaeftsSubTypId ≠ 1)|numeric| |
 |annahmekriteriumTypId|Code für das Annahmekriterium des Geschäfts <br />1: Mehrheit der Stimmen <br />2: Mehrheit der Gemeinden <br />3: Alle Gemeinden <br />4: Mehrheit der Stimmen und der Gemeinden <br />5: Volks- und Ständemehr|numeric| |
-|annahmekriteriumTyp|Annahmekriterium des Geschäfts <br />Mehrheit der Stimmen <br />Mehrheit der Gemeinden <br />3Alle Gemeinden <br />Mehrheit der Stimmen und der Gemeinden <br />Volks- und Ständemehr|character| |
+|annahmekriteriumTyp|Annahmekriterium des Geschäfts <br />Mehrheit der Stimmen <br />Mehrheit der Gemeinden <br />Alle Gemeinden <br />Mehrheit der Stimmen und der Gemeinden <br />Volks- und Ständemehr|character| |
 |anzahlSitze|Gesamtzahl der in der Verwaltungseinheit im zu wählenden Organ enthaltenen Mandate|numeric| |
 |bereitsGewaehlte|Anzahl Mandate, die schon vor der Wahl (beispielsweise in einem ersten Wahlgang oder in Stiller Wahl) vergeben wurden und bei der Wahl nicht besetzt werden|numeric| |
 |zusatzInformationen|Zusätzliche Informationen zum Geschäft|list| |
