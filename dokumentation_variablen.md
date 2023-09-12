@@ -7,11 +7,11 @@
 |geoLevelname|Name oder bei Verwaltungseinheiten mit Geolevel 2 (Kantonen) die Abkürzung der Verwaltungseinheit gemäss BFS|character| |
 |nochKeineInformation|Gibt an, ob bereits Informationen zum Geschäft vorliegen|logical| |
 |vorlagen|Liste der Vorlagen|list| |
-|geoLevelLevel|Geolevel der Verwaltungseinheit 0: Bund 1: Kanton 2: Bezirk 3: Gemeinde 4: Zählkreis|numeric|4 existiert de facto nicht, die Zählkreise werden anders verarbeitet (siehe Variable zaehlkreise)|
+|geoLevelLevel|Geolevel der Verwaltungseinheit <br />0: Bund <br />1: Kanton <br />2: Bezirk <br />3: Gemeinde <br />4: Zählkreis|numeric|4 existiert de facto nicht, die Zählkreise werden anders verarbeitet (siehe Variable zaehlkreise)|
 |vorlagenId|Eindeutiger Identifikator eines Geschäfts über sämtliche erfassten kommunalen und regionalen Geschäfte|numeric| |
 |notfalltext|Liste der verschiedenen Sprachen, in denen ein Notfalltext angeboten wird|list|Wird vorläufig nicht verwendet|
 |vorlagenTitel|Liste der Vorlagentitel in den angebotenen Sprachen|list| |
-|langKey|Sprachcode für den Vorlagentitel de: deutsch fr: französisch it: italienisch rm: rätoromanisch|character| |
+|langKey|Sprachcode für den Vorlagentitel <br />de: deutsch <br />fr: französisch <br />it: italienisch <br />rm: rätoromanisch|character| |
 |text|Titel der Vorlage|character| |
 |vorlageBeendet|Angabe, ob die Auszählung und Eingabe des gesamten Geschäfts (in allen daran beteiligten Verwaltungseinheiten) abgeschlossen ist|logical| |
 |geschaeftsTypId|ID des Geschäftstyps|numeric|Siehe Tabellenblatt "Geschäftstypen"|
@@ -19,13 +19,13 @@
 |geschaeftsSubTypId|ID des Geschäftssubtyps|numeric|Siehe Tabellenblatt "Geschäftstypen"|
 |geschaeftsSubTyp|Subtyp des Geschäfts|character|Siehe Tabellenblatt "Geschäftstypen"|
 |hauptvorlagenId|Indikator für die ID der Hauptvorlage, falls das Geschäft keine Hauptvorlage ist (geschaeftsSubTypId ≠ 1)|numeric| |
-|annahmekriteriumTypId|(Code für das) Annahmekriterium des Geschäfts  1: Mehrheit der Stimmen 2: Mehrheit der Gemeinden 3: Alle Gemeinden 4: Mehrheit der Stimmen und der Gemeinden 5: Volks- und Ständemehr|numeric| |
-|annahmekriteriumTyp| |character| |
+|annahmekriteriumTypId|Code für das Annahmekriterium des Geschäfts <br />1: Mehrheit der Stimmen <br />2: Mehrheit der Gemeinden <br />3: Alle Gemeinden <br />4: Mehrheit der Stimmen und der Gemeinden <br />5: Volks- und Ständemehr|numeric| |
+|annahmekriteriumTyp|Annahmekriterium des Geschäfts <br />Mehrheit der Stimmen <br />Mehrheit der Gemeinden <br />3Alle Gemeinden <br />Mehrheit der Stimmen und der Gemeinden <br />Volks- und Ständemehr|character| |
 |anzahlSitze|Gesamtzahl der in der Verwaltungseinheit im zu wählenden Organ enthaltenen Mandate|numeric| |
 |bereitsGewaehlte|Anzahl Mandate, die schon vor der Wahl (beispielsweise in einem ersten Wahlgang oder in Stiller Wahl) vergeben wurden und bei der Wahl nicht besetzt werden|numeric| |
 |zusatzInformationen|Zusätzliche Informationen zum Geschäft|list| |
 |quelle|Quelle der Daten|character| |
-|bemerkung|Bemerkungen zum Geschäft. Darin enthalten sein können unterschiedliche Attribute. Die Liste ist nicht abschliessend und auf die einzelnen Attribute wird nicht präziser eingegangen.|list| |
+|bemerkungen|Bemerkungen zum Geschäft. Darin enthalten sein können unterschiedliche Attribute. Die Liste ist nicht abschliessend und auf die einzelnen Attribute wird nicht präziser eingegangen.|list| |
 |stand|Informationen zum Auszählstand|list| |
 |wahlAbgeschlossen|Angabe, ob die Wahl abgeschlossen ist|logical| |
 |gemeindenZaehlkreiseTotal|Gesamtzahl der Auszählkreise für das Geschäft|numeric| |
@@ -63,7 +63,7 @@
 |gewinnWaehlerProzent|Differenz der Wählerzahl von der letzten zu dieser Wahl dieses Organs in Prozentpunkten|numeric| |
 |gewinnSitze|Differenz der Anzahl gewonnener Mandate von der letzten zu dieser Wahl dieses Organs|numeric| |
 |kandidaten|Zu dieser Wahl antretende Kandidierende|list| |
-|kandidatenNummer|Für diese Wahl eindeutige Identifikationsnummer einer kandidierenden Person|character| |
+|kandidatNummer|Für diese Wahl eindeutige Identifikationsnummer einer kandidierenden Person|character| |
 |nachname|Nachname der kandidierenden Person|character| |
 |vorname|Vorname der kandidierenden Person|character| |
 |partei|Parteiangabe (Kurzform) der kandidierenden Person in den angebotenen Sprachen|list| |
@@ -80,7 +80,7 @@
 |rangInListeInWahlkreis|Rang innerhalb der Liste in Wahlkreis anhand der erhaltenen Kandidierendenstimmen|numeric| |
 |absolutesMehr|Höhe des absoluten Mehrs falls es sich um einen Wahlgang mit absoluten Mehr handelt|numeric| |
 |weitererWahlgangNotwendig|Angabe, ob zur Besetzung sämtlicher offener Mandate ein weiterer Wahlgang notwendig ist|logical| |
-|hochrechnungen|Liste der Hochrechnungswerte|list| |
+|hochrechnung|Liste der Hochrechnungswerte|list| |
 |metadaten|Liste der zu der Hochrechnung gehörenden Metadaten|list| |
 |text1|Liste der verschiedenen Sprachen, in denen ein Freitext angeboten wird|list| |
 |text2|Liste der verschiedenen Sprachen, in denen ein Freitext angeboten wird|list| |
