@@ -18,6 +18,8 @@
 |geschaeftsTyp|Typ des Geschäfts|character|Siehe Datei [geschaeftstypen_geschaeftsarten.md](https://github.com/openZH/documentation_echtzeitdaten-am-wahltag/blob/main/geschaeftstypen_geschaeftsarten.md)|
 |geschaeftsSubTypId|ID des Geschäftssubtyps|numeric|Siehe Datei [geschaeftstypen_geschaeftsarten.md](https://github.com/openZH/documentation_echtzeitdaten-am-wahltag/blob/main/geschaeftstypen_geschaeftsarten.md)|
 |geschaeftsSubTyp|Subtyp des Geschäfts|character|Siehe Datei [geschaeftstypen_geschaeftsarten.md](https://github.com/openZH/documentation_echtzeitdaten-am-wahltag/blob/main/geschaeftstypen_geschaeftsarten.md)|
+|geschaeftsArtId|ID der Geschäftsart|numeric|Siehe Datei [geschaeftstypen_geschaeftsarten.md](https://github.com/openZH/documentation_echtzeitdaten-am-wahltag/blob/main/geschaeftstypen_geschaeftsarten.md)|
+|geschaeftsArt|Bezeichnung der Geschäftsart|character|Siehe Datei [geschaeftstypen_geschaeftsarten.md](https://github.com/openZH/documentation_echtzeitdaten-am-wahltag/blob/main/geschaeftstypen_geschaeftsarten.md)|
 |hauptvorlagenId|Indikator für die ID der Hauptvorlage, falls das Geschäft keine Hauptvorlage ist (geschaeftsSubTypId ≠ 1)|numeric| |
 |annahmekriteriumTypId|Code für das Annahmekriterium des Geschäfts <br />1: Mehrheit der Stimmen <br />2: Mehrheit der Gemeinden <br />3: Alle Gemeinden <br />4: Mehrheit der Stimmen und der Gemeinden <br />5: Volks- und Ständemehr|numeric| |
 |annahmekriteriumTyp|Annahmekriterium des Geschäfts <br />Mehrheit der Stimmen <br />Mehrheit der Gemeinden <br />Alle Gemeinden <br />Mehrheit der Stimmen und der Gemeinden <br />Volks- und Ständemehr|character| |
@@ -33,11 +35,27 @@
 |gemeindenZaehlkreiseAbgeschlossenProzent|Anteil der Auszählkreise, in denen die Auszählung beendet ist in Prozent|numeric| |
 |gemeindenZaehlkreiseNichtAbgeschlossen|Zahl der Auszählkreise, in denen die Auszählung noch nicht beendet ist|numeric| |
 |gemeindenZaehlkreiseNichtAbgeschlossenProzent|Anteil der Auszählkreise, in denen die Auszählung noch nicht beendet ist in Prozent|numeric| |
+|bezirkeTotal|Gesamtzahl der Bezirke der Wahl|numeric| |
+|bezirkeAbgeschlossen|Zahl der Bezirke, in denen die Auszählung beendet ist|numeric| |
+|bezirkeAbgeschlossenProzent|Anteil der Bezirke, in denen die Auszählung beendet ist in Prozent|numeric| |
+|bezirkeNichtAbgeschlossen|Zahl der Bezirke, in denen die Auszählung noch nicht beendet ist|numeric| |
+|bezirkeNichtAbgeschlossenProzent|Anteil der Bezirke, in denen die Auszählung noch nicht beendet ist in Prozent|numeric| |
 |wahlkreiseTotal|Gesamtzahl der Wahlkreise der Wahl|numeric| |
 |wahlkreiseAbgeschlossen|Zahl der Wahlkreise, in denen die Auszählung beendet ist|numeric| |
 |wahlkreiseAbgeschlossenProzent|Anteil der Wahlkreise, in denen die Auszählung beendet ist in Prozent|numeric| |
 |wahlkreiseNichtAbgeschlossen|Zahl der Wahlkreise, in denen die Auszählung noch nicht beendet ist|numeric| |
 |wahlkreiseNichtAbgeschlossenProzent|Anteil der Wahlkreise, in denen die Auszählung noch nicht beendet ist in Prozent|numeric| |
+|parteien|Zu dieser Wahl antretende Parteien|list| |
+
+
+|parteiIdKantonZH
+|parteiCode
+
+
+|listen|Für diese Wahl antretende Listen|list| |
+|listeNummer|Listennummer der Liste|numeric| |
+|listeCode|Kurzbezeichnung der Liste|character| |
+|listenOld|Aufzählung der bei der letzten Wahl für dieselbe Behörde angetretenen Listen, welche für einen Vergleich der Parteistärken unter der genannten Partei subsummiert werden|list| |
 |resultat|Liste der Resultatwerte|list| |
 |gebietAusgezaehlt|Angabe, ob die Auszählung und Eingabe des Geschäfts in der betrachteten Verwaltungseinheit abgeschlossen ist|logical| |
 |anzahlWahlberechtigte|Anzahl der Wahlberechtigten in der Verwaltungseinheit|numeric| |
@@ -52,9 +70,6 @@
 |wahlbeteiligungInProzent|Wahlbeteiligung in Prozent als eingelegteWahlzettel / anzahlWahlberechtigte * 100|numeric| |
 |wahlbeteiligungInProzentLetzteWahl|Wahlbeteiligung in Prozent der letzten Wahl für dasselbe Organs|numeric| |
 |wahlbeteiligungVeraenderung|Differenz der Wahlbeteiligung von der letzten zu dieser Wahl dieses Organs in Prozentpunkten|numeric| |
-|listen|Für diese Wahl antretende Listen|list| |
-|listeNummer|Listennummer der Liste|numeric| |
-|listeCode|Kurzbezeichnung der Liste|character| |
 |waehler|Wählerzahl der Liste in der Verwaltungseinheit. In jedem Wahlkreis erhält man die Wählerzahl, indem die Parteistimmen einer Liste durch die im Wahlkreis zu vergebenden Mandate geteilt werden. Die einzelnen Wählerzahler aus den Wahlkreisen lassen sich anschliessend Summieren, wobei das Ergebnis die Wählerzahl einer Liste im gesamten Wahlgebiet ist.|numeric| |
 |waehlerProzent|Anteil an der gesamten Wählerzahl in der Verwaltungseinheit in Prozent|numeric| |
 |sitze|Anzahl der gewonnenen Mandate im Organ|numeric| |
@@ -63,6 +78,11 @@
 |gewinnWaehlerProzent|Differenz der Wählerzahl von der letzten zu dieser Wahl dieses Organs in Prozentpunkten|numeric| |
 |gewinnSitze|Differenz der Anzahl gewonnener Mandate von der letzten zu dieser Wahl dieses Organs|numeric| |
 |kandidaten|Zu dieser Wahl antretende Kandidierende|list| |
+
+
+|parteiNummer||||
+
+
 |kandidatNummer|Für diese Wahl eindeutige Identifikationsnummer einer kandidierenden Person|character| |
 |nachname|Nachname der kandidierenden Person|character| |
 |vorname|Vorname der kandidierenden Person|character| |
@@ -98,6 +118,13 @@
 |wahlkreisDivisor|Wahlkreisdivisor des Wahlkreises|numeric|Weitere Informationen zum doppelproportionalen Sitzverteilungsverfahren im Kanton Zürich finden Sie unter https://www.zh.ch/de/politik-staat/wahlen-abstimmungen/kantons-regierungsratswahlen.html|
 |listenImWahlkreis|Liste der im Wahlkreis zur Wahl antretenden Listen|list| |
 |zeitreihen|Liste der Zeitreihenattribute|list| |
+
+
+|rangDifferenz
+|prozentanteilAmTotalEigeneListenstimmen
+|mutmasslichGewaehlt
+
+
 |hinweisZeitreihen|Hinweistext zu den Zeitreihendaten|character| |
 |sitzeYYYY|Anzahl Sitze im Jahr YYYY|numeric| |
 |waehlerProzentYYYY|Wählerzahl der Liste im Jahr YYYY|numeric| |
