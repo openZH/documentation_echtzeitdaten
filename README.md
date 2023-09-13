@@ -1,4 +1,4 @@
-# documentation_echtzeitdaten-am-wahltag
-Dieses Repository enthält historisierte Erklärungen und Definitionen der einzelnen Variablen für die Ressourcen des Datensatzes [Echtzeitdaten am Wahltag des Kantons Zürich](https://www.zh.ch/de/politik-staat/statistik-daten/datenkatalog.html#/datasets/1942@statistisches-amt-kanton-zuerich).
+# documentation_echtzeitdaten
+Dieses Repository enthält historisierte Erklärungen und Definitionen der einzelnen Variablen für die Ressourcen der Datensätze [Echtzeitdaten am Wahltag des Kantons Zürich](https://www.zh.ch/de/politik-staat/statistik-daten/datenkatalog.html#/datasets/1942@statistisches-amt-kanton-zuerich), [Echtzeitdaten am Abstimmungstag – kommunale und regionale Vorlagen](https://www.zh.ch/de/politik-staat/statistik-daten/datenkatalog.html#/datasets/734@statistisches-amt-kanton-zuerich) und [Echtzeitdaten am Abstimmungstag des Kantons Zürich – eidgenössische und kantonale Vorlagen](https://www.zh.ch/de/politik-staat/statistik-daten/datenkatalog.html#/datasets/713@statistisches-amt-kanton-zuerich) (deprecated).
 
-Die Metadaten des Datensatzes und der einzelnen Ressourcen sind direkt im Metadatenkatalog ersichtlich und werden hier nicht noch einmal publiziert.
+Die Metadaten der Datensätze und der einzelnen Ressourcen sind direkt im Metadatenkatalog ersichtlich.
