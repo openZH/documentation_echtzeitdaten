@@ -46,15 +46,11 @@
 |wahlkreiseNichtAbgeschlossen|Zahl der Wahlkreise, in denen die Auszählung noch nicht beendet ist|numeric| |
 |wahlkreiseNichtAbgeschlossenProzent|Anteil der Wahlkreise, in denen die Auszählung noch nicht beendet ist in Prozent|numeric| |
 |parteien|Zu dieser Wahl antretende Parteien|list| |
-
-
-|parteiIdKantonZH
-|parteiCode
-
-
+|parteiIdKantonZH|siehe parteiNummer|numeric| |
+|parteiBezeichnung|siehe parteiCode|character| |
 |listen|Für diese Wahl antretende Listen|list| |
-|listeNummer|Listennummer der Liste|numeric| |
-|listeCode|Kurzbezeichnung der Liste|character| |
+|listeNummer|Listennummer der Liste für diese Wahl|numeric| |
+|listeCode|Kurzbezeichnung der Liste für diese Wahl|character| |
 |listenOld|Aufzählung der bei der letzten Wahl für dieselbe Behörde angetretenen Listen, welche für einen Vergleich der Parteistärken unter der genannten Partei subsummiert werden|list| |
 |resultat|Liste der Resultatwerte|list| |
 |gebietAusgezaehlt|Angabe, ob die Auszählung und Eingabe des Geschäfts in der betrachteten Verwaltungseinheit abgeschlossen ist|logical| |
@@ -77,12 +73,9 @@
 |letzteWahlSitze|Anzahl der gewonnenen Mandate bei der letzten Wahl des Organs|numeric| |
 |gewinnWaehlerProzent|Differenz der Wählerzahl von der letzten zu dieser Wahl dieses Organs in Prozentpunkten|numeric| |
 |gewinnSitze|Differenz der Anzahl gewonnener Mandate von der letzten zu dieser Wahl dieses Organs|numeric| |
+|parteiNummer|Parteinummer der Partei für diese Wahl|numeric| |
+|parteiCode|Kurzbezeichnung der Partei für diese Wahl|character| |
 |kandidaten|Zu dieser Wahl antretende Kandidierende|list| |
-
-
-|parteiNummer||||
-
-
 |kandidatNummer|Für diese Wahl eindeutige Identifikationsnummer einer kandidierenden Person|character| |
 |nachname|Nachname der kandidierenden Person|character| |
 |vorname|Vorname der kandidierenden Person|character| |
@@ -118,20 +111,16 @@
 |wahlkreisDivisor|Wahlkreisdivisor des Wahlkreises|numeric|Weitere Informationen zum doppelproportionalen Sitzverteilungsverfahren im Kanton Zürich finden Sie unter https://www.zh.ch/de/politik-staat/wahlen-abstimmungen/kantons-regierungsratswahlen.html|
 |listenImWahlkreis|Liste der im Wahlkreis zur Wahl antretenden Listen|list| |
 |zeitreihen|Liste der Zeitreihenattribute|list| |
-
-
-|rangDifferenz
-|prozentanteilAmTotalEigeneListenstimmen
-|mutmasslichGewaehlt
-
-
+|rangDifferenz|Differenz zwischen Rangierung aufgrund des Resultates innerhalb der Liste im Vergleich zum Platz auf der Liste, wobei ein negativer Wert eine bessere Rangierung aufgrund des Resultats bedeutet|numeric|Grundsätzlich indiziert die Kandidierendennummer den ursprünglichen Rang auf der Liste. Dies ist beispielsweise relevant, wenn Kandidierende vorkummuliert sind. So bekleidet die Kandidatin XX.02 den ursprünglichen Rang 2 auf der Liste, selbst wenn Sie aufgrund einer vorkumulierung des Kandidaten XX.01 erst auf dem dritten Platz der Liste aufgeführt ist.|
+|prozentanteilAmTotalEigeneListenstimmen|Anteil der Stimmen am Total der Listenstimmen der eigenen Liste in der Verwaltungseinheit in Prozent|numeric| |
+|mutmasslichGewaehlt|Angabe, ob eine kandidierende Person gemäss der Hochrechnung voraussichtlich gewählt ist|logical| |
 |hinweisZeitreihen|Hinweistext zu den Zeitreihendaten|character| |
 |sitzeYYYY|Anzahl Sitze im Jahr YYYY|numeric| |
 |waehlerProzentYYYY|Wählerzahl der Liste im Jahr YYYY|numeric| |
 |bezirke|Liste der Bezirke in der Verwaltungseinheit, in denen ein Geschäft behandelt wird|list| |
 |wahlkreise|Liste der Wahlkreise in der Verwaltungseinheit, in denen ein Geschäft behandelt wird|list| |
-|stimmenProzentAufBasisDerListenStimmen|Anteil der Stimmen am Total der Listenstimmen in der Verwaltungseinheit|numeric|In Gemeinden, die aus mehreren Wahlkreisen bestehen (Stadt Zürich), ist darauf zu achten, dass diese Werte nicht zur Hierarchisierung von Kandidierenden aus verschiedenen Wahlkreisen verwendet werden kann, da die unterschiedliche Mandatszahl diese Werte verzerrt. Für solche Vergleiche sind ausschliesslich die Werte im Array "zaehlkreise" zu verwenden, wo die Anteile anhand der Gesamtzahlen (Listen- oder Kandidatenstimmen) in der Verwaltungseinheit, also im subkommunalen Zählkreis, berechnet werden.|
-|stimmenProzentAufBasisDerKandidatenStimmen|Anteil der Stimmen am Total der Kandidatenstimmen in der Verwaltungseinheit|numeric| |
+|stimmenProzentAufBasisDerListenStimmen|Anteil der Stimmen am Total der Listenstimmen in der Verwaltungseinheit in Prozent|numeric|In Gemeinden, die aus mehreren Wahlkreisen bestehen (Stadt Zürich), ist darauf zu achten, dass diese Werte nicht zur Hierarchisierung von Kandidierenden aus verschiedenen Wahlkreisen verwendet werden kann, da die unterschiedliche Mandatszahl diese Werte verzerrt. Für solche Vergleiche sind ausschliesslich die Werte im Array "zaehlkreise" zu verwenden, wo die Anteile anhand der Gesamtzahlen (Listen- oder Kandidatenstimmen) in der Verwaltungseinheit, also im subkommunalen Zählkreis, berechnet werden.|
+|stimmenProzentAufBasisDerKandidatenStimmen|Anteil der Stimmen am Total der Kandidatenstimmen in der Verwaltungseinheit in Prozent|numeric| |
 |gemeinden|Liste der Gemeinden, in welchen das Geschäft behandelt wird|list| |
 |geoLevelParentnummer|Nummer der übergeordneten Verwaltungseinheit (geoLevelLevel -1) gemäss BFS|numeric| |
 |bezirkeTotal|Gesamtzahl der Bezirke der Wahl|numeric| |
