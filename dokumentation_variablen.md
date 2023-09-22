@@ -4,7 +4,7 @@
 |timestamp|Zeitpunkt der letzten Aktualisierung|datetime "yyyy-mm-ddThh:mm:ss"|Werte, welche direkt aus der Übermittlungssoftware gespiesen werden, beinhalten kein Datum und werden im Format "hh:mm" ausgewiesen.|
 |kantone|Liste der Kantone|list| |
 |geoLevelnummer|Nummer der Verwaltungseinheit gemäss BFS|numeric|Bei Zählkreisen, also Untereinheiten von Gemeinden, setzt sich diese Nummer aus der Nummer des Auszählkreises, einer Null und der BFS-Nummer der Gemeinde zusammen|
-|geoLevelname|Name oder bei Verwaltungseinheiten mit Geolevel 2 (Kantonen) die Abkürzung der Verwaltungseinheit gemäss BFS|character| |
+|geoLevelname|Name oder bei Verwaltungseinheiten mit Geolevel 1 (Kantonen) die Abkürzung der Verwaltungseinheit gemäss BFS|character| |
 |nochKeineInformation|Gibt an, ob bereits Informationen zum Geschäft vorliegen|logical| |
 |vorlagen|Liste der Vorlagen|list| |
 |geoLevelLevel|Geolevel der Verwaltungseinheit <br />0: Bund <br />1: Kanton <br />2: Bezirk <br />3: Gemeinde <br />4: Zählkreis|numeric|4 existiert de facto nicht, die Zählkreise werden anders verarbeitet (siehe Variable zaehlkreise)|
