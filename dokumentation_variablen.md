@@ -57,7 +57,9 @@
 |listeCode|Kurzbezeichnung der Liste|character| |
 |parteien|Für diese Wahl antretende Parteien|list| |
 |parteiNummer|Parteinummer der Partei gemäss Kanton ZH (entspricht nicht Parteinummern des BFS)|numeric| |
+|parteiIdKantonZH|Identisch mit Variable "parteiNummer" (tritt nur unter Variable "zusatzInformationen" auf)|numeric| |
 |parteiCode|Kurzbezeichnung der Partei|character| |
+|parteiBezeichnung|Identisch mit Variable "parteiCode" (tritt nur unter Variable "zusatzInformationen" auf)|character| |
 |waehler|Wählerzahl der Liste in der Verwaltungseinheit. In jedem Wahlkreis erhält man die Wählerzahl, indem die Parteistimmen einer Liste durch die im Wahlkreis zu vergebenden Mandate geteilt werden. Die einzelnen Wählerzahler aus den Wahlkreisen lassen sich anschliessend Summieren, wobei das Ergebnis die Wählerzahl einer Liste im gesamten Wahlgebiet ist.|numeric| |
 |waehlerProzent|Anteil an der gesamten Wählerzahl in der Verwaltungseinheit in Prozent|numeric| |
 |sitze|Anzahl der gewonnenen Mandate im Organ|numeric| |
