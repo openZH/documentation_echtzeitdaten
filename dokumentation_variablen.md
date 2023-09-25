@@ -53,6 +53,7 @@
 |wahlbeteiligungInProzentLetzteWahl|Wahlbeteiligung in Prozent der letzten Wahl für dasselbe Organs|numeric| |
 |wahlbeteiligungVeraenderung|Differenz der Wahlbeteiligung von der letzten zu dieser Wahl dieses Organs in Prozentpunkten|numeric| |
 |listen|Für diese Wahl antretende Listen|list| |
+|listenOld|Für die letzte (vorhergehende) Wahl antretende Listen|list| |
 |listeNummer|Listennummer der Liste|numeric| |
 |listeCode|Kurzbezeichnung der Liste|character| |
 |parteien|Für diese Wahl antretende Parteien|list| |
