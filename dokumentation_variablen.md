@@ -91,6 +91,9 @@
 |text2|Liste der verschiedenen Sprachen, in denen ein Freitext angeboten wird|list| |
 |infotext|Liste der verschiedenen Sprachen, in denen ein Infotext angeboten wird|list| |
 |sitzeAnzeigen|Angabe, ob eine Hochrechnung zu den Sitzen vorhanden ist|logical| |
+|rangDifferenz|Differenz zwischen Rang gemäss Listenplatz und Rang gemäss erhaltener Stimmen eines Kandidierenden gemäss Hochrechnung|numeric| |
+|prozentanteilAmTotalEigeneListenstimmen|Prozentanteil der Stimmen eines Kandidierenden am Total der Stimmen seiner Liste gemäss Hochrechnung|numeric| |
+|mutmasslichGewaehlt|Angabe, ob der Kandidierende gemäss Hochrechnung mutmasslich gewählt ist oder nicht|logical| |
 |vtlower|Obergrenze des 95%-Vertrauensintervalls|numeric| |
 |vtupper|Untergrenze des 95%-Vertrauensintervalls|numeric| |
 |sitzverteilung|Liste der Sitzverteilungsattribute|list| |
