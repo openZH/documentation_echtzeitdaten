@@ -4,7 +4,7 @@
 |timestamp|Zeitpunkt der letzten Aktualisierung|datetime "yyyy-mm-ddThh:mm:ss"|Werte, welche direkt aus der Übermittlungssoftware gespiesen werden, beinhalten kein Datum und werden im Format "hh:mm" ausgewiesen.|
 |kantone|Liste der Kantone|list| |
 |geoLevelnummer|Nummer der Verwaltungseinheit gemäss BFS|numeric|Bei Zählkreisen, also Untereinheiten von Gemeinden, setzt sich diese Nummer aus der Nummer des Auszählkreises, einer Null und der BFS-Nummer der Gemeinde zusammen|
-|geoLevelname|Name oder bei Verwaltungseinheiten mit Geolevel 2 (Kantonen) die Abkürzung der Verwaltungseinheit gemäss BFS|character| |
+|geoLevelname|Name oder bei Verwaltungseinheiten mit Geolevel 1 (Kantonen) die Abkürzung der Verwaltungseinheit gemäss BFS|character| |
 |nochKeineInformation|Gibt an, ob bereits Informationen zum Geschäft vorliegen|logical| |
 |vorlagen|Liste der Vorlagen|list| |
 |geoLevelLevel|Geolevel der Verwaltungseinheit <br />0: Bund <br />1: Kanton <br />2: Bezirk <br />3: Gemeinde <br />4: Zählkreis|numeric|4 existiert de facto nicht, die Zählkreise werden anders verarbeitet (siehe Variable zaehlkreise)|
@@ -111,8 +111,8 @@
 |wahlkreisDivisor|Wahlkreisdivisor des Wahlkreises|numeric|Weitere Informationen zum doppelproportionalen Sitzverteilungsverfahren im Kanton Zürich finden Sie unter https://www.zh.ch/de/politik-staat/wahlen-abstimmungen/kantons-regierungsratswahlen.html|
 |listenImWahlkreis|Liste der im Wahlkreis zur Wahl antretenden Listen|list| |
 |zeitreihen|Liste der Zeitreihenattribute|list| |
-|rangDifferenz|Differenz zwischen Rangierung aufgrund des Resultates innerhalb der Liste im Vergleich zum Platz auf der Liste, wobei ein negativer Wert eine bessere Rangierung aufgrund des Resultats bedeutet|numeric|Grundsätzlich indiziert die Kandidierendennummer den ursprünglichen Rang auf der Liste. Dies ist beispielsweise relevant, wenn Kandidierende vorkummuliert sind. So bekleidet die Kandidatin XX.02 den ursprünglichen Rang 2 auf der Liste, selbst wenn Sie aufgrund einer vorkumulierung des Kandidaten XX.01 erst auf dem dritten Platz der Liste aufgeführt ist.|
-|prozentanteilAmTotalEigeneListenstimmen|Anteil der Stimmen am Total der Listenstimmen der eigenen Liste in der Verwaltungseinheit in Prozent|numeric| |
+|rangDifferenz|Differenz zwischen Rangierung aufgrund des Resultates (der Hochrechnung) innerhalb der Liste im Vergleich zum Listenplatz, wobei ein negativer Wert eine bessere Rangierung aufgrund des Resultats bedeutet|numeric|Grundsätzlich indiziert die Kandidierendennummer den ursprünglichen Rang auf der Liste. Dies ist beispielsweise relevant, wenn Kandidierende vorkummuliert sind. So bekleidet die Kandidatin XX.02 den ursprünglichen Rang 2 auf der Liste, selbst wenn Sie aufgrund einer vorkumulierung des Kandidaten XX.01 erst auf dem dritten Platz der Liste aufgeführt ist.|
+|prozentanteilAmTotalEigeneListenstimmen|Anteil der Stimmen am Total der Listenstimmen der eigenen Liste (der Hochrechnung) in der Verwaltungseinheit in Prozent|numeric| |
 |mutmasslichGewaehlt|Angabe, ob eine kandidierende Person gemäss der Hochrechnung voraussichtlich gewählt ist|logical| |
 |hinweisZeitreihen|Hinweistext zu den Zeitreihendaten|character| |
 |sitzeYYYY|Anzahl Sitze im Jahr YYYY|numeric| |
