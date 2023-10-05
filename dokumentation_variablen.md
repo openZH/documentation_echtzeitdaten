@@ -109,7 +109,7 @@
 |unveraenderteWahlzettel|Anzahl unveränderte Wahlzettel für die Proporzwahl in der Verwaltungseinheit|numeric| |
 |veraenderteWahlzettel|Anzahl veränderte Wahlzettel (also Wahlzettel mit gestrichenen, kumulierten und/oder panaschierten Kandidierenden) für die Proporzwahl in der Verwaltungseinheit|numeric| |
 |vorlageAngenommen|Angabe, ob die Vorlage in der Verwaltungseinheit angenommen wurde. Der Wert ist "null", so lange die Auszählung noch nicht abgeschlossen wurde|logical| |
-|vorlageAngenommenGesamtbetrachtung|Gibt an, ob ein Geschäft in seiner Gesamtbetrachtung, also auch unter Berücksichtigung von Resultaten verbundener Geschäfte, angenommen wurde|logical|Beispielsweise kann sowohl die Hauptvorlage als auch der Gegenvorschlag eines verbundenen Geschäfts angenommen werden. Wenn sich die Stimmberechtigten mit der Stichfrage in einem solchen Fall für die Hauptvorlage aussprechen, würde für den Gegenvorschlag dann gelten: vorlageAngenommen = true; vorlageAngenommenGesamtbetrachtung = false|
+|vorlageAngenommenGesamtbetrachtung|Gibt an, ob ein Geschäft in seiner Gesamtbetrachtung, also auch unter Berücksichtigung von Resultaten verbundener Geschäfte, angenommen wurde|logical|Dieses Attribut wird momentan nicht abgefüllt und enthält flächendeckend "null"|
 |vorlageBeendet|Angabe, ob die Auszählung und Eingabe des gesamten Geschäfts (in allen daran beteiligten Verwaltungseinheiten) abgeschlossen ist|logical| |
 |vorlagen|Liste der Vorlagen|list| |
 |vorlagenId|Eindeutiger Identifikator eines Geschäfts über sämtliche erfassten Geschäfte|numeric| |
