@@ -44,8 +44,8 @@
 |geschaeftsTypId|ID des Geschäftstyps|numeric|Siehe Datei [geschaeftstypen_geschaeftsarten.md](https://github.com/openZH/documentation_echtzeitdaten-am-wahltag/blob/main/geschaeftstypen_geschaeftsarten.md)|
 |geschlecht|Geschlecht der kandidiereden Person. "M" für männlich, "W" für weiblich|character| |
 |gewaehlt|Angabe, ob die Person bei der Wahl in das Organ gewählt wurde|logical| |
-|gewinnSitze|Differenz der Anzahl gewonnener Mandate von der letzten zu dieser Wahl dieses Organs|numeric| |
-|gewinnWaehlerProzent|Differenz der Wählerzahl von der letzten zu dieser Wahl dieses Organs in Prozentpunkten|numeric| |
+|gewinnSitze|Differenz der Anzahl gewonnener Mandate von der letzten zu dieser Wahl dieses Organs|numeric|Dieser Wert wird bei Nationalratswahlen nur für aggregierte Parteien, nicht aber für einzelne Listen ausgegeben, da die Listen unter Umständen nicht mit denjenigen der letzten Wahl gematcht werden können|
+|gewinnWaehlerProzent|Differenz der Wählerzahl von der letzten zu dieser Wahl dieses Organs in Prozentpunkten|numeric|Dieser Wert wird bei Nationalratswahlen nur für aggregierte Parteien, nicht aber für einzelne Listen ausgegeben, da die Listen unter Umständen nicht mit denjenigen der letzten Wahl gematcht werden können|
 |gueltigeStimmen|Anzahl der gültigen Stimmen. Entspricht dem Total der eingegangenen Stimm- oder Wahlzettel, abzüglich den ungültigen und den leeren Stimm- oder Wahlzetteln (wobei diese Zahl bei Wahlen mit den zu vergebenden Mandaten multipliziert wird und wiederum ungültige und leere Stimmen, also Zeilen auf dem Wahlzettel, abgezogen werden)|numeric| |
 |gueltigeWahlzettel|Anzahl gültiger Wahlzettel in der Verwaltungseinheit|numeric|Die Summe der "veränderteWahlzettel" und "unveränderteWahlzettel" ist unter Umständen kleiner als "gültigeWahlzettel". Dies liegt daran, dass es möglicherweise Wahlzettel ohne Parteibezeichnung (WoP) gibt, die in beiden Kategorien nicht abgebildet werden. Die WoP unterscheiden sich von Wahlzetteln mit Parteibezeichnung dadurch, dass die leeren Zeilen nicht als Zusatzstimmen für eine Partei zählen, sondern verloren gehen. Entsprechend führt die Multiplikation von "gültigeWahlzettel" mit "anzahlSitze" auch nicht zwingend zum Wert von "listenStimmenTotal".|
 |hauptvorlagenId|Indikator für die ID der Hauptvorlage, falls das Geschäft keine Hauptvorlage ist (geschaeftsSubTypId ≠ 1)|numeric| |
@@ -60,8 +60,8 @@
 |kantone|Liste der Kantone|list| |
 |langKey|Sprachcode für den Vorlagentitel <br />de: deutsch <br />fr: französisch <br />it: italienisch <br />rm: rätoromanisch|character| |
 |leereWahlzettel|Anzahl leerer Wahlzettel in der Verwaltungseinheit|numeric| |
-|letzteWahlSitze|Anzahl der gewonnenen Mandate bei der letzten Wahl des Organs|numeric| |
-|letzteWahlWaehlerProzent|Anteil an der gesamten Wählerzahl in der Verwaltungseinheit bei der letzten Wahl des Organs in Prozent|numeric| |
+|letzteWahlSitze|Anzahl der gewonnenen Mandate bei der letzten Wahl des Organs|numeric|Dieser Wert wird bei Nationalratswahlen nur für aggregierte Parteien, nicht aber für einzelne Listen ausgegeben, da die Listen unter Umständen nicht mit denjenigen der letzten Wahl gematcht werden können|
+|letzteWahlWaehlerProzent|Anteil an der gesamten Wählerzahl in der Verwaltungseinheit bei der letzten Wahl des Organs in Prozent, wobei für diesen Vergleich ebenfalls lediglich die aktuell ausgezählten Auszählkreise in Betracht fallen|numeric|Dieser Wert wird bei Nationalratswahlen nur für aggregierte Parteien, nicht aber für einzelne Listen ausgegeben, da die Listen unter Umständen nicht mit denjenigen der letzten Wahl gematcht werden können|
 |listeCode|Kurzbezeichnung der Liste für diese Wahl|character| |
 |listeNummer|Listennummer der Liste für diese Wahl|numeric| |
 |listen|Für diese Wahl antretende Listen|list| |
@@ -118,7 +118,7 @@
 |vtlower|Obergrenze des 95%-Vertrauensintervalls|numeric| |
 |vtupper|Untergrenze des 95%-Vertrauensintervalls|numeric| |
 |waehler|Wählerzahl der Liste in der Verwaltungseinheit. In jedem Wahlkreis erhält man die Wählerzahl, indem die Parteistimmen einer Liste durch die im Wahlkreis zu vergebenden Mandate geteilt werden. Die einzelnen Wählerzahler aus den Wahlkreisen lassen sich anschliessend Summieren, wobei das Ergebnis die Wählerzahl einer Liste im gesamten Wahlgebiet ist.|numeric| |
-|waehlerProzent|Anteil an der gesamten Wählerzahl in der Verwaltungseinheit in Prozent|numeric| |
+|waehlerProzent|Anteil an der gesamten Wählerzahl in der Verwaltungseinheit zum aktuellen Auszählzeitpunkt in Prozent|numeric| |
 |waehlerProzentYYYY|Wählerzahl der Liste im Jahr YYYY|numeric| |
 |wahlAbgeschlossen|Angabe, ob die Wahl abgeschlossen ist|logical| |
 |wahlbeteiligungInProzent|Wahlbeteiligung in Prozent als eingelegteWahlzettel / anzahlWahlberechtigte * 100|numeric| |
