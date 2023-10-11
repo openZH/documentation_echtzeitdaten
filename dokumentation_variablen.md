@@ -1,6 +1,6 @@
 |**Variable**|**Inhalt**|**Format**|**Bemerkungen**|
 |-|-|-|-|
-|absolutesMehr|Höhe des absoluten Mehrs falls es sich um einen Wahlgang mit absoluten Mehr handelt|numeric| |
+|absolutesMehr|Höhe des absoluten Mehrs anhand der aktuell ausgezählten Einheiten falls es sich um einen Wahlgang mit absoluten Mehr handelt|numeric| |
 |abstimmtag|Datum des Urnenganges|date "yyyy-mm-dd"| |
 |annahmekriteriumTyp|Annahmekriterium des Geschäfts <br />Mehrheit der Stimmen <br />Mehrheit der Gemeinden <br />Alle Gemeinden <br />Mehrheit der Stimmen und der Gemeinden <br />Volks- und Ständemehr|character| |
 |annahmekriteriumTypId|Code für das Annahmekriterium des Geschäfts <br />1: Mehrheit der Stimmen <br />2: Mehrheit der Gemeinden <br />3: Alle Gemeinden <br />4: Mehrheit der Stimmen und der Gemeinden <br />5: Volks- und Ständemehr|numeric| |
@@ -134,7 +134,7 @@
 |wahlkreiseNichtAbgeschlossenProzent|Anteil der Wahlkreise, in denen die Auszählung noch nicht beendet ist in Prozent|numeric| |
 |wahlkreiseTotal|Gesamtzahl der Wahlkreise der Wahl|numeric| |
 |wahltag|Datum des Urnengangs|date "yyyy-mm-dd"| |
-|weitererWahlgangNotwendig|Angabe, ob zur Besetzung sämtlicher offener Mandate ein weiterer Wahlgang notwendig ist|logical| |
+|weitererWahlgangNotwendig|Angabe, ob zur Besetzung sämtlicher offener Mandate ein weiterer Wahlgang notwendig ist|logical|Dieser Wert wird anhand der ausgezählten Einheiten in Echtzeit berechnet und kann sich entsprechend während des Tages ändern. Er basiert nicht auf einer Hochrechnung|
 |wohnort|Wohnort der kandidierenden Person|character| |
 |zaehlkreise|Liste der subkommunalen Zählkreise einer Verwaltungseinheit|list| |
 |zeitreihen|Liste der Zeitreihenattribute|list| |
