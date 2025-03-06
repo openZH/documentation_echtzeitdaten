@@ -109,7 +109,7 @@
 |unveraenderteWahlzettel|Anzahl unveränderte Wahlzettel für die Proporzwahl im Gebiet|numeric| |
 |veraenderteWahlzettel|Anzahl veränderte Wahlzettel (also Wahlzettel mit gestrichenen, kumulierten und/oder panaschierten Kandidierenden) für die Proporzwahl im Gebiet|numeric| |
 |vorlageAngenommen|Angabe, ob die Vorlage im Gebiet angenommen wurde. Der Wert ist "null", so lange die Auszählung noch nicht abgeschlossen wurde|logical| |
-|vorlageAngenommenGesamtbetrachtung|Gibt an, ob ein Geschäft in seiner Gesamtbetrachtung, also auch unter Berücksichtigung von Resultaten verbundener Geschäfte, angenommen wurde|logical|Dieses Attribut wird momentan nicht abgefüllt und enthält flächendeckend "null"|
+|vorlageAngenommenGesamtbetrachtung|Gibt an, ob ein Geschäft in seiner Gesamtbetrachtung, also auch unter Berücksichtigung von Resultaten verbundener Geschäfte, angenommen wurde|logical| |
 |vorlageBeendet|Angabe, ob die Auszählung und Eingabe des gesamten Geschäfts (in allen daran beteiligten Gebieten) abgeschlossen ist|logical| |
 |vorlagen|Liste der Vorlagen|list| |
 |vorlagenId|Eindeutiger Identifikator eines Geschäfts über sämtliche erfassten Geschäfte|numeric| |
